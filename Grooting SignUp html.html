@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="page.php" method="POST" style="background: rgb(148, 155, 155);">
+<div>
+    <header>
+<h1 style="color: blue;">       ------------------------------------------------------Register----------------------------------------------------------</h1>
+
+<p style="color: coral;">Please fill in this form to create an account.</p>
+    </header>
+<label for="name"><b>Name</b></label>
+ <input type="text" placeholder="   Enter Name" name="name" required>
+ <br>
+ 
+<label for="email"><b>Email</b></label>
+<input type="text" placeholder="   Enter email" name="email"required>
+<br>
+<label for="psw"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="psw" required>
+<br>
+<label for="pswrepeat"><b>Repeat Password</b></label>
+<input type="password" placeholder="Repeat Password" name="pswrepeat" required>
+<br>
+<label for="phone"><b>Phone</b></label>
+<input type="text" placeholder="Enter Phone number" name="phone" required>
+<br>
+
+<label for="Gender"><b>Gender</b></label>
+
+<input type="radio" name="gender" value="F" required>female
+<input type="radio" name="gender" value="M" required>male
+<br>
+<hr>
+<p>By creating an account you agree to our<a href="#">Terms & Privacy</a>.</p>
+<br>
+<button type="submit" class="registration" width="10px" height="10px" name="register" onclick="page.php">Register</button>
+</div>
+<div class="container signin">
+<p>Already have an account ?<a href="login.html">Log in</a>.</p>
+</div>
+</form>
+</body>
+</html>
